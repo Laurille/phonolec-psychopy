@@ -8,8 +8,12 @@ Test de conscience phonologique pour candidats à l'implant cochléaire malenten
 - Décompresser les deux archives d'intrus dans un seul répertoire
 
 ## Instructions de lancement
-Les exercices requièrent une intallation de PsychoPy v1.82.  
-L'exercice proprement dit est décrit par le fichier .psyexp.   
-Les fichiers .xlsx décrit l'enchainement des items proposés et notemment les images utilisées et la réponse prévue.  
-L'ensemble des images requises par un exercice doivent se trouver dans le même répertoire.  
+- Les exercices requièrent une intallation de PsychoPy v1.82.  
+- L'exercice proprement dit est décrit par le fichier .psyexp.   
+- Les fichiers .xlsx décrit l'enchainement des items proposés et notemment les images utilisées et la réponse prévue.  
+- L'ensemble des images requises par un exercice doivent se trouver dans le même répertoire.  
 
+## Collecte des résultats  
+- Les résultats d'une passation sont écrits par PsychoPy dans un fichier .xlsx.
+- Les ficheirs de résultat sont tous placés dans un sous-répertoire nommé data.  
+- Les fichiers .py et .psydat générés n'ont pas d'usage direct.  
