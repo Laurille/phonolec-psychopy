@@ -1,0 +1,277 @@
+<PsychoPy2experiment version="1.82.01" encoding="utf-8">
+  <Settings>
+    <Param name="Show mouse" val="True" valType="bool" updates="None"/>
+    <Param name="Data filename" val="'data/%s_%s_%s_%s' %(expInfo['evaluateur'], expInfo['patient'], expName, expInfo['date'])" valType="code" updates="None"/>
+    <Param name="Monitor" val="testMonitor" valType="str" updates="None"/>
+    <Param name="Enable Escape" val="True" valType="bool" updates="None"/>
+    <Param name="color" val="$[0,0,0]" valType="str" updates="None"/>
+    <Param name="Window size (pixels)" val="[1440, 900]" valType="code" updates="None"/>
+    <Param name="Full-screen window" val="True" valType="bool" updates="None"/>
+    <Param name="colorSpace" val="rgb" valType="str" updates="None"/>
+    <Param name="Experiment info" val="{u'age': u'', u'session': u'001', u'patient': u'', u'evaluateur': u''}" valType="code" updates="None"/>
+    <Param name="Save csv file" val="False" valType="bool" updates="None"/>
+    <Param name="Show info dlg" val="True" valType="bool" updates="None"/>
+    <Param name="Save wide csv file" val="False" valType="bool" updates="None"/>
+    <Param name="Save psydat file" val="True" valType="bool" updates="None"/>
+    <Param name="expName" val="denomination" valType="str" updates="None"/>
+    <Param name="logging level" val="error" valType="code" updates="None"/>
+    <Param name="blendMode" val="avg" valType="str" updates="None"/>
+    <Param name="Save excel file" val="True" valType="bool" updates="None"/>
+    <Param name="Units" val="use prefs" valType="str" updates="None"/>
+    <Param name="Save log file" val="False" valType="bool" updates="None"/>
+    <Param name="Screen" val="1" valType="num" updates="None"/>
+  </Settings>
+  <Routines>
+    <Routine name="consigne">
+      <TextComponent name="txt_cons1">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="txt_cons1" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="1.5" valType="code" updates="constant"/>
+        <Param name="color" val="black" valType="str" updates="constant"/>
+        <Param name="text" val="Vous allez voir des images.&#10;&#10;Dites à voix haute ce que représente chaque image.&#10;&#10;Répondez le plus vite possible.&#10;&#10;Si votre réponse n'est pas celle attendue, la solution s'affichera." valType="str" updates="constant"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.11" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="key_resp_2" valType="code" updates="None"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'right'" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="nothing" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="fin">
+      <TextComponent name="txt_fin">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="txt_fin" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="1.5" valType="code" updates="constant"/>
+        <Param name="color" val="black" valType="str" updates="constant"/>
+        <Param name="text" val="Merci, cet exercice est terminé." valType="str" updates="constant"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.2" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_7">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="key_resp_7" valType="code" updates="None"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="correction">
+      <ImageComponent name="img2">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="flipVert" val="False" valType="bool" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="img2" valType="code" updates="None"/>
+        <Param name="color" val="$[1,1,1]" valType="str" updates="constant"/>
+        <Param name="stopVal" val="3*(1 - touche_rep.corr)" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="2" valType="code" updates="None"/>
+        <Param name="mask" val="None" valType="str" updates="constant"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="interpolate" val="linear" valType="str" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="texture resolution" val="128" valType="code" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="flipHoriz" val="False" valType="bool" updates="constant"/>
+        <Param name="image" val="$image" valType="str" updates="set every repeat"/>
+        <Param name="size" val="[1, 1]" valType="code" updates="constant"/>
+      </ImageComponent>
+      <TextComponent name="text">
+        <Param name="opacity" val="(1 - touche_rep.corr)" valType="code" updates="set every repeat"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="text" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="black" valType="str" updates="constant"/>
+        <Param name="text" val="$nom_item" valType="str" updates="set every repeat"/>
+        <Param name="stopVal" val="3*(1 - touche_rep.corr)" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="2" valType="code" updates="None"/>
+        <Param name="pos" val="[0, -0.6]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.2" valType="code" updates="constant"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="annonce_ex">
+      <TextComponent name="txt_ann_ex">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="txt_ann_ex" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="black" valType="str" updates="constant"/>
+        <Param name="text" val="&#10;&#10;Etes-vous prêt ?" valType="str" updates="constant"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.125" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_8">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="key_resp_8" valType="code" updates="None"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'right'" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="titre">
+      <TextComponent name="txt_titre">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="txt_titre" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="black" valType="str" updates="constant"/>
+        <Param name="text" val="DIAPORAMA" valType="str" updates="constant"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.25" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_5">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="key_resp_5" valType="code" updates="None"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'right'" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="evaluation">
+      <ImageComponent name="img">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="flipVert" val="False" valType="bool" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="img" valType="code" updates="None"/>
+        <Param name="color" val="$[1,1,1]" valType="str" updates="constant"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="mask" val="None" valType="str" updates="constant"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="interpolate" val="linear" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="texture resolution" val="128" valType="code" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="flipHoriz" val="False" valType="bool" updates="constant"/>
+        <Param name="image" val="$image" valType="str" updates="set every repeat"/>
+        <Param name="size" val="[1, 1]" valType="code" updates="constant"/>
+      </ImageComponent>
+      <KeyboardComponent name="touche_rep">
+        <Param name="correctAns" val="o" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="True" valType="bool" updates="constant"/>
+        <Param name="name" val="touche_rep" valType="code" updates="None"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'o', 'n', 'a'" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="titre"/>
+    <Routine name="consigne"/>
+    <Routine name="annonce_ex"/>
+    <LoopInitiator loopType="TrialHandler" name="exercice4">
+      <Param name="conditionsFile" val="ordre_aleatoire.xlsx" valType="str" updates="None"/>
+      <Param name="name" val="exercice4" valType="code" updates="None"/>
+      <Param name="isTrials" val="True" valType="bool" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="sequential" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{u'place': 0.961040578483268, u'image': u'fleche_supermom.jpg', u'nom_item': u'fl\xe8ches', u'rang': 58}, {u'place': 0.45299092123145035, u'image': u'balance_flickr.jpg', u'nom_item': u'balance', u'rang': 13}, {u'place': 0.30342558216770765, u'image': u'aigle_supermom.jpg', u'nom_item': u'aigle', u'rang': 2}, {u'place': 0.9586862003750173, u'image': u'ciseaux_supermom.jpg', u'nom_item': u'ciseaux', u'rang': 41}, {u'place': 0.6133433380774808, u'image': u'chapiteau_pixabay.jpg', u'nom_item': u'chapiteau', u'rang': 36}, {u'place': 0.8520763242439133, u'image': u'chapeau_wikimedia.jpg', u'nom_item': u'chapeau', u'rang': 35}, {u'place': 0.868013285939566, u'image': u'cloche_wikimedia.jpg', u'nom_item': u'cloche', u'rang': 44}, {u'place': 0.592644833918256, u'image': u'riz_wikimedia.jpg', u'nom_item': u'riz', u'rang': 116}, {u'place': 0.991430672109744, u'image': u'salade_supermom.jpg', u'nom_item': u'salade', u'rang': 120}, {u'place': 0.8795591567570124, u'image': u'livre1_supermom.jpg', u'nom_item': u'livre', u'rang': 76}, {u'place': 0.41588513266462657, u'image': u'Aubergine_wikipedia.jpg', u'nom_item': u'aubergine', u'rang': 10}, {u'place': 0.030127420396434235, u'image': u'manege_wikimedia.jpg', u'nom_item': u'man\xe8ge', u'rang': 78}, {u'place': 0.5421707364968709, u'image': u'ampoule_supermom.jpg', u'nom_item': u'ampoule', u'rang': 4}, {u'place': 0.622299717603344, u'image': u'poele_flickr.jpg', u'nom_item': u'po\xeble', u'rang': 105}, {u'place': 0.591735334823397, u'image': u'choufleur_supermom.jpg', u'nom_item': u'chou-fleur', u'rang': 39}, {u'place': 0.4849715026928173, u'image': u'raie_wikimedia.jpg', u'nom_item': u'raie', u'rang': 113}, {u'place': 0.9304529975044875, u'image': u'tracteur_supermom.jpg', u'nom_item': u'tracteur', u'rang': 130}, {u'place': 0.17098811367578015, u'image': u'tabouret_supermom.jpg', u'nom_item': u'tabouret', u'rang': 123}, {u'place': 0.9040401457525113, u'image': u'roue_pixabay.jpg', u'nom_item': u'roue', u'rang': 117}, {u'place': 0.36285533074047416, u'image': u'lit_supermom.jpg', u'nom_item': u'lit', u'rang': 75}, {u'place': 0.8934804671869921, u'image': u'poulet_pixabay.jpg', u'nom_item': u'poulet', u'rang': 110}, {u'place': 0.6094501713139518, u'image': u'panda_supermom.jpg', u'nom_item': u'panda', u'rang': 93}, {u'place': 0.6577155234794597, u'image': u'artichaut_supermom.jpg', u'nom_item': u'artichaut', u'rang': 9}, {u'place': 0.44868815202624257, u'image': u'bateaux_wikimedia.jpg', u'nom_item': u'bateaux', u'rang': 16}, {u'place': 0.2380072158788391, u'image': u'arrosoir_LMourier.jpg', u'nom_item': u'arrosoir', u'rang': 8}, {u'place': 0.8461412091249574, u'image': u'loupe_LMourier.jpg', u'nom_item': u'loupe', u'rang': 77}, {u'place': 0.23354493120586073, u'image': u'cygne_supermom.jpg', u'nom_item': u'cygne', u'rang': 49}, {u'place': 0.6644499636323009, u'image': u'lampe_posee_supermom.jpg', u'nom_item': u'lampe', u'rang': 73}, {u'place': 0.5380150937354965, u'image': u'casquette_LMourier.jpg', u'nom_item': u'casquette', u'rang': 30}, {u'place': 0.558779574675165, u'image': u'chat_supermom.jpg', u'nom_item': u'chat', u'rang': 37}, {u'place': 0.7883520238659733, u'image': u'tasse_wikimedia.jpg', u'nom_item': u'tasse', u'rang': 127}, {u'place': 0.7521066123921673, u'image': u'escargot_supermom.jpg', u'nom_item': u'escargot', u'rang': 57}, {u'place': 0.4021408222060989, u'image': u'bureau_wikimedia(M).jpg', u'nom_item': u'bureau', u'rang': 23}, {u'place': 0.30489090664901664, u'image': u'poisson_pixabay.jpg', u'nom_item': u'poisson', u'rang': 107}, {u'place': 0.016472610438273638, u'image': u'perroquet2_supermom.jpg', u'nom_item': u'perroquet', u'rang': 101}, {u'place': 0.5071584870245672, u'image': u'cerises_supermom.jpg', u'nom_item': u'cerises', u'rang': 31}, {u'place': 0.46701475187156793, u'image': u'cheminee_supermom.jpg', u'nom_item': u'chemin\xe9e', u'rang': 38}, {u'place': 0.3284548903480278, u'image': u'pantalon_flickr.jpg', u'nom_item': u'pantalon', u'rang': 95}, {u'place': 0.920363981829259, u'image': u'telephone_wikimedia.jpg', u'nom_item': u't\xe9l\xe9phone', u'rang': 126}, {u'place': 0.6481432995624287, u'image': u'des_supermom.jpg', u'nom_item': u'd\xe9s', u'rang': 50}, {u'place': 0.8393203225007312, u'image': u'veau_wikimedia(M).jpg', u'nom_item': u'veau', u'rang': 132}, {u'place': 0.7084564851233935, u'image': u'radiateur_wikimedia.jpg', u'nom_item': u'radiateur', u'rang': 112}, {u'place': 0.3357747451113722, u'image': u'tomates_supermom.jpg', u'nom_item': u'tomates', u'rang': 129}, {u'place': 0.8869707234153914, u'image': u'fromage_pixabay.jpg', u'nom_item': u'fromages', u'rang': 60}, {u'place': 0.5905607608453558, u'image': u'crayons1_supermom.jpg', u'nom_item': u'crayons', u'rang': 48}, {u'place': 0.9726929156474693, u'image': u'boutons_wikipedia.jpg', u'nom_item': u'boutons', u'rang': 18}, {u'place': 0.23493546642311058, u'image': u'cactus_supermom.jpg', u'nom_item': u'cactus', u'rang': 24}, {u'place': 0.6482870009825548, u'image': u'carton1_supermom.jpg', u'nom_item': u'carton', u'rang': 29}, {u'place': 0.014734534730334148, u'image': u'kangourou_supermom.jpg', u'nom_item': u'kangourou', u'rang': 72}, {u'place': 0.09549103751571997, u'image': u'bras_CJones.jpg', u'nom_item': u'bras', u'rang': 20}, {u'place': 0.8400784962242857, u'image': u'arbres_supermom.jpg', u'nom_item': u'arbres', u'rang': 7}, {u'place': 0.1684006568102192, u'image': u'menton_flickr.jpg', u'nom_item': u'menton', u'rang': 82}, {u'place': 0.832251253314047, u'image': u'megotecrase_supermom.jpg', u'nom_item': u'm\xe9got', u'rang': 81}, {u'place': 0.7363193215430929, u'image': u'gorille_supermom.jpg', u'nom_item': u'gorille', u'rang': 65}, {u'place': 0.8952195533581477, u'image': u'toboggan_supermom.jpg', u'nom_item': u'toboggan', u'rang': 128}, {u'place': 0.5021842208431628, u'image': u'paon_supermom.jpg', u'nom_item': u'paon', u'rang': 96}, {u'place': 0.8057680624705557, u'image': u'poubelle_pixabay.jpg', u'nom_item': u'poubelle', u'rang': 109}, {u'place': 0.12982478157144606, u'image': u'allumettes_LMourier.jpg', u'nom_item': u'allumettes', u'rang': 3}, {u'place': 0.17669201785311528, u'image': u'orange_wikimedia.jpg', u'nom_item': u'orange', u'rang': 89}, {u'place': 0.942777588647678, u'image': u'citron_supermom.jpg', u'nom_item': u'citron', u'rang': 42}, {u'place': 0.16162002492466243, u'image': u'coccinelle_supermom.jpg', u'nom_item': u'coccinelle', u'rang': 45}, {u'place': 0.40108322358735293, u'image': u'rateau_VHubert.jpg', u'nom_item': u'rateau', u'rang': 114}, {u'place': 0.6522975324775814, u'image': u'briquet_wikimedia.jpg', u'nom_item': u'briquet', u'rang': 21}, {u'place': 0.4267660913625393, u'image': u'gateau_wikimedia.jpg', u'nom_item': u'g\xe2teau', u'rang': 62}, {u'place': 0.7989075493414137, u'image': u'harpe_supermom.jpg', u'nom_item': u'harpe', u'rang': 69}, {u'place': 0.6342685945520857, u'image': u'ballon_supermom.jpg', u'nom_item': u'ballon', u'rang': 14}, {u'place': 0.858951582418391, u'image': u'pelle_supermom.jpg', u'nom_item': u'pelle', u'rang': 100}, {u'place': 0.8972331929533637, u'image': u'rouleau_wikimedia.jpg', u'nom_item': u'rouleau', u'rang': 118}, {u'place': 0.7427666945661263, u'image': u'poignee_supermom.jpg', u'nom_item': u'poign\xe9e', u'rang': 106}, {u'place': 0.20372248796901926, u'image': u'piano2_supermom.jpg', u'nom_item': u'piano', u'rang': 103}, {u'place': 0.7781836243600749, u'image': u'Pharmacie_CJones.JPG', u'nom_item': u'pharmacie', u'rang': 102}, {u'place': 0.9239256566367223, u'image': u'bracelet_wikimedia.jpg', u'nom_item': u'bracelet', u'rang': 19}, {u'place': 0.6734105522244831, u'image': u'the_flickr(M).jpg', u'nom_item': u'th\xe9', u'rang': 125}, {u'place': 0.881592757816453, u'image': u'guitare_supermom.jpg', u'nom_item': u'guitare', u'rang': 67}, {u'place': 0.07068961705837917, u'image': u'girafe_supermom.jpg', u'nom_item': u'girafe', u'rang': 63}, {u'place': 0.5489565278638384, u'image': u'camionbenne1_supermom.jpg', u'nom_item': u'camion', u'rang': 26}, {u'place': 0.7234374949002677, u'image': u'mouton_wikimedia.jpg', u'nom_item': u'mouton', u'rang': 84}, {u'place': 0.022205047894425123, u'image': u'requin_wikimedia.jpg', u'nom_item': u'requin', u'rang': 115}, {u'place': 0.01784442109406248, u'image': u'passoire_LMourier.jpg', u'nom_item': u'passoire', u'rang': 99}, {u'place': 0.3127846762596477, u'image': u'palmier_LMourier.jpg', u'nom_item': u'palmier', u'rang': 92}, {u'place': 0.6003560296147057, u'image': u'ananas_supermom.jpg', u'nom_item': u'ananas', u'rang': 5}, {u'place': 0.6176460289908182, u'image': u'sac_supermom.jpg', u'nom_item': u'sac', u'rang': 119}, {u'place': 0.6805841557457971, u'image': u'champignons_supermom.jpg', u'nom_item': u'champignons', u'rang': 33}, {u'place': 0.19853065959083593, u'image': u'oignons_supermom.jpg', u'nom_item': u'oignons', u'rang': 87}, {u'place': 0.09567010445333224, u'image': u'accordeon_supermom.jpg', u'nom_item': u'accord\xe9on', u'rang': 1}, {u'place': 0.5001175255581309, u'image': u'drapeaux_wikimedia(M).jpg', u'nom_item': u'drapeaux', u'rang': 51}, {u'place': 0.5333483806075822, u'image': u'cinema_flickr.jpg', u'nom_item': u'cin\xe9ma', u'rang': 40}, {u'place': 0.5501972890099187, u'image': u'Eau_CJones.jpg', u'nom_item': u'eau', u'rang': 52}, {u'place': 0.28496740491503647, u'image': u'papillon_supermom.jpg', u'nom_item': u'papillon', u'rang': 97}, {u'place': 0.3986358941507048, u'image': u'fourmi_pixabay.jpg', u'nom_item': u'fourmi', u'rang': 59}, {u'place': 0.06516083472928125, u'image': u'avocat_supermom.jpg', u'nom_item': u'avocat', u'rang': 11}, {u'place': 0.6427733573843186, u'image': u'vache_supermom.jpg', u'nom_item': u'vache', u'rang': 131}, {u'place': 0.5535560053837629, u'image': u'couteau_pixabay.jpg', u'nom_item': u'couteau', u'rang': 46}, {u'place': 0.8393291523065143, u'image': u'araignee1_supermom.jpg', u'nom_item': u'araign\xe9e', u'rang': 6}, {u'place': 0.7879608912168259, u'image': u'paillasson_CJones.jpg', u'nom_item': u'paillasson', u'rang': 91}, {u'place': 0.44500573611317584, u'image': u'scie_pixabay.jpg', u'nom_item': u'scie', u'rang': 121}, {u'place': 0.44444028374291145, u'image': u'ombrelle_flickr.jpg', u'nom_item': u'ombrelle', u'rang': 88}, {u'place': 0.09902084392399857, u'image': u'champagne_wikimedia.jpg', u'nom_item': u'champagne', u'rang': 32}, {u'place': 0.9235282927164666, u'image': u'poivronsvertrougeoranges_supermom.jpg', u'nom_item': u'poivrons', u'rang': 108}, {u'place': 0.18670435445772715, u'image': u'escaliers_wikimedia.jpg', u'nom_item': u'escaliers', u'rang': 56}, {u'place': 0.9595268310696403, u'image': u'chandelier_wikimedia.jpg', u'nom_item': u'chandelier', u'rang': 34}, {u'place': 0.5289027524594383, u'image': u'marteau_LMourier.jpg', u'nom_item': u'marteau', u'rang': 79}, {u'place': 0.582400277811527, u'image': u'enveloppes_LMourier.jpg', u'nom_item': u'enveloppes', u'rang': 55}, {u'place': 0.8111600521933813, u'image': u'entonnoir_wikimedia.jpg', u'nom_item': u'entonnoir', u'rang': 54}, {u'place': 0.36057206634061767, u'image': u'bonnet_wikimedia.jpg', u'nom_item': u'bonnet', u'rang': 17}, {u'place': 0.5769650361925833, u'image': u'gants_pixabay.jpg', u'nom_item': u'gants', u'rang': 61}, {u'place': 0.8251956378952678, u'image': u'moteur_wikimedia.jpg', u'nom_item': u'moteur', u'rang': 83}, {u'place': 0.37604327059666787, u'image': u'vert_LM.jpg', u'nom_item': u'vert', u'rang': 66}, {u'place': 0.7391372342403073, u'image': u'ecureuil1_supermom.jpg', u'nom_item': u'\xe9cureuil', u'rang': 53}, {u'place': 0.5097237249656792, u'image': u'canari_supermom.jpg', u'nom_item': u'canari', u'rang': 28}, {u'place': 0.678928210077994, u'image': u'haricots_wikimedia.jpg', u'nom_item': u'haricots', u'rang': 68}, {u'place': 0.7024970762307989, u'image': u'herisson1_supermom.jpg', u'nom_item': u'h\xe9risson', u'rang': 71}, {u'place': 0.19047227083152118, u'image': u'brocoli1_supermom.jpg', u'nom_item': u'brocoli', u'rang': 22}, {u'place': 0.9374560382061026, u'image': u'canard_pixabay.jpg', u'nom_item': u'canard', u'rang': 27}, {u'place': 0.9766600118677503, u'image': u'glacons_CJones.jpg', u'nom_item': u'gla\xe7ons', u'rang': 64}, {u'place': 0.049028426091099364, u'image': u'helicoptere_supermom.jpg', u'nom_item': u'h\xe9licopt\xe8re', u'rang': 70}, {u'place': 0.849906117976611, u'image': u'gris_LM.jpg', u'nom_item': u'gris', u'rang': 133}, {u'place': 0.2592501674522062, u'image': u'os_wikimedia.jpg', u'nom_item': u'os', u'rang': 90}, {u'place': 0.39252793082543747, u'image': u'nenuphars_pixabay(M).jpg', u'nom_item': u'n\xe9nuphars', u'rang': 85}, {u'place': 0.0903693201940029, u'image': u'panier_LMourier.jpg', u'nom_item': u'panier', u'rang': 94}, {u'place': 0.08375650851300742, u'image': u'couverture_wikimedia(M).jpg', u'nom_item': u'couverture', u'rang': 47}, {u'place': 0.15823406333005707, u'image': u'lingot_pixabay.jpg', u'nom_item': u'lingot', u'rang': 74}, {u'place': 0.20252927138635513, u'image': u'matelas_supermom.jpg', u'nom_item': u'matelas', u'rang': 80}, {u'place': 0.8162143794566789, u'image': u'serpents_LM.jpg', u'nom_item': u'serpents', u'rang': 122}, {u'place': 0.6601215733500793, u'image': u'nez_wikimedia.jpg', u'nom_item': u'nez', u'rang': 86}, {u'place': 0.832070626229802, u'image': u'cafe_wikimedia.jpg', u'nom_item': u'caf\xe9', u'rang': 25}, {u'place': 0.3848149874915363, u'image': u'banane_supermom.png', u'nom_item': u'banane', u'rang': 15}, {u'place': 0.8674473986622854, u'image': u'baguettes_pixabay.jpg', u'nom_item': u'baguettes', u'rang': 12}, {u'place': 0.0050698934664212825, u'image': u'pis_pixabay.jpg', u'nom_item': u'pis', u'rang': 104}, {u'place': 0.4962112988188643, u'image': u'parapluie_supermom.jpg', u'nom_item': u'parapluie', u'rang': 98}, {u'place': 0.8788449671007337, u'image': u'tapis_supermom.jpg', u'nom_item': u'tapis', u'rang': 124}, {u'place': 0.4862232924358526, u'image': u'poupee_pixabay.jpg', u'nom_item': u'poup\xe9e', u'rang': 111}, {u'place': 0.32193163898639865, u'image': u'cles_pixabay.jpg', u'nom_item': u'cl\xe9s', u'rang': 43}]" valType="str" updates="None"/>
+      <Param name="Selected rows" val="" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="evaluation"/>
+    <Routine name="correction"/>
+    <LoopTerminator name="exercice4"/>
+    <Routine name="fin"/>
+  </Flow>
+</PsychoPy2experiment>
