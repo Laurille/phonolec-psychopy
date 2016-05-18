@@ -10,6 +10,6 @@ Test de conscience phonologique pour candidats à l'implant cochléaire malenten
 ## Instructions de lancement
 Les exercices requièrent une intallation de PsychoPy v1.82.  
 L'exercice proprement dit est décrit par le fichier .psyexp.   
-Les fichier .xlsx décrit l'enchainement des items proposés et notemment les images utilisées et la réponse prévue.  
+Les fichiers .xlsx décrit l'enchainement des items proposés et notemment les images utilisées et la réponse prévue.  
 L'ensemble des images requises par un exercice doivent se trouver dans le même répertoire.  
 
